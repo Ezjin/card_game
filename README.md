@@ -1,6 +1,7 @@
 # card_game
 Projeto de desenvolvimento de um card game no terminal.
 
+```
 card_game/
 │
 ├── card_game/             # código fonte
@@ -17,7 +18,7 @@ card_game/
 │
 ├── requirements.txt
 └── main.py                # ponto de entrada do jogo
-
+```
 Primeiras etapas:
 - Definir qual jogo adaptar
   
