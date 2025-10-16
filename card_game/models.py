@@ -2,7 +2,7 @@
 
 
 class Card():
-    allowed_suits = {"hearts", "diamonds", "clubs", "spades"}        
+    allowed_suits = ["hearts", "diamonds", "clubs", "spades"]        
     suit_dict = {
                 "hearts":"♥",
                 "diamonds":"♦",
