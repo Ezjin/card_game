@@ -1,16 +1,15 @@
 class Card():
     SUITS = ["hearts", "diamonds", "clubs", "spades"]        
-    suit_dict = {
-                "hearts":"♥",
-                "diamonds":"♦",
-                "clubs":"♣",
-                "spades":"♠"
-                }
+    SUITS_SYMBOLS = {"hearts":"♥", "diamonds":"♦", "clubs":"♣", "spades":"♠"}
+    RANKS = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+
     def __init__ (self, rank, suit, flip = True):
         if suit.lower() not in self.SUITS:
-            raise ValueError(f"Invalid suit: {suit}.")
+            raise ValueError(f"Invalid suit: {suit}")
+        if rank not in self.RANKS:
+            raise ValueError(f"Invalid rank: {rank}")
         self.rank = rank
-        self.suit = self.suit_dict[suit.lower()]
+        self.suit = self.SUITS_SYMBOLS[suit.lower()]
         self.flip = flip
 
     def render(self):
