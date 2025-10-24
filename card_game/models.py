@@ -1,8 +1,5 @@
-
-
-
 class Card():
-    allowed_suits = ["hearts", "diamonds", "clubs", "spades"]        
+    SUITS = ["hearts", "diamonds", "clubs", "spades"]        
     suit_dict = {
                 "hearts":"♥",
                 "diamonds":"♦",
@@ -10,8 +7,8 @@ class Card():
                 "spades":"♠"
                 }
     def __init__ (self, rank, suit, flip = True):
-        if suit.lower() not in self.allowed_suits:
-            raise ValueError(f"Invalid suit: {suit}. It should be one of those {self.allowed_suits}") 
+        if suit.lower() not in self.SUITS:
+            raise ValueError(f"Invalid suit: {suit}.")
         self.rank = rank
         self.suit = self.suit_dict[suit.lower()]
         self.flip = flip
