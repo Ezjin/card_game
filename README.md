@@ -1,5 +1,7 @@
 # card_game
-Projeto de desenvolvimento de um card game no terminal.
+Projeto de desenvolvimento de um card game.
+
+Esses diretórios estão ultrapassados.
 
 ```
 card_game/
