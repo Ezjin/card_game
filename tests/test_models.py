@@ -28,3 +28,19 @@ def test_repr():
 ])
 def test_value_mapping(rank, value):
     assert Card(rank, "Diamonds").value == value
+
+
+def test_eq():
+    c1 = Card("2", "Hearts")
+    c2 = Card("2", "Hearts")
+    assert c1 == c2
+
+def test_not_eq():
+    c1 = Card("4", "Hearts")
+    c2 = Card("5", "Diamonds")
+    assert c1 != c2
+
+def test_diff():
+    c1 = Card("K", "Clubs")
+    c2 = Card ("7", "Hearts")
+    assert c1 - c2 == 6
