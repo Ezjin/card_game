@@ -40,7 +40,7 @@ class Card:
         return self.SYMBOLS[self._suit]
 
     def __str__(self):
-        return f"{self._rank} of {self._symbol} {self._suit}"
+        return f"{self._rank} of {self._suit} {self._symbol}"
 
     def __repr__(self):
         return f"Card(Rank = {self._rank}, Suit = {self._suit})"
